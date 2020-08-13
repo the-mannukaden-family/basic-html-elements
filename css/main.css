@@ -16,8 +16,27 @@ ul {
   list-style-type: none;
 }
 
+/* Cascading & Specificty */
+
+#ol-id {
+  color: yellow;
+}
+
+.ol-class-two {
+  color: aqua;
+}
+
+.ol-class {
+  color: green;
+}
+
 ol {
   list-style-type: lower-roman;
+  color: blue;
+}
+
+ol {
+  color: red;
 }
 
 /* Selector is an id */
@@ -35,4 +54,31 @@ ol {
   width: 100px;
   height: 100px;
   margin: auto;
+}
+
+/* CSS Selector combinations: https://www.w3schools.com/css/css_combinators.asp */
+
+/* Descendent selector: */
+
+div p {
+  background-color: chocolate;
+}
+
+/* Direct descendent selector: */
+
+div > p {
+  background-color: rosybrown;
+}
+
+
+/* Sibling selector: */
+
+p ~ p {
+  color: indianred;
+}
+
+/* Adjacent sibling selector: */
+
+p + p {
+  color: mediumslateblue;
 }
